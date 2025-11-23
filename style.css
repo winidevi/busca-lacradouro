@@ -48,3 +48,13 @@ button:hover{
     background-color: #064013;
     
 }
+
+footer{
+  
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    position: fixed;
+    bottom: 10px;
+      
+}
