@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 main{
     background: #ffffff;
@@ -34,9 +35,9 @@ input{
     border-radius: 4px;
     font-size: 10px;
 }
-button{
+main button{
     padding: 10px;
-    background-color: #28a745;
+    background-color: #b0bcb3;
     color: white;
     border: none;
     border-radius: 4px;
@@ -44,8 +45,8 @@ button{
     font-size: 16px;
 
 }
-button:hover{
-    background-color: #064013;
+main button:hover{
+    background-color: #585abc;
     
 }
 
@@ -54,7 +55,52 @@ footer{
     margin-top: 20px;
     font-size: 14px;
     color: #555;
-    position: fixed;
+    position: fixed;    
     bottom: 10px;
       
+}
+.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.dark-mode main{
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+.dark-mode input{
+    background-color: #2c2c2c;
+    border: 1px solid #555;
+    color: #ffffff;
+}   
+.dark-mode button{
+    background-color: #837792;
+    color: #121212;
+}   
+.dark-mode button:hover{
+    background-color: #826ab9;
+    color: #f9f9f9;
+}   
+#botaotema{
+    position: fixed;      
+    top: 10px;          
+    right: 10px;          
+    padding: 10px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    color: #f3f3f0;
+}
+
+
+#botaotema:hover{
+    color: #0fa5ea;
+}   
+.dark-mode {
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
 }
